@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta name="description" content="first real practice">
+		<meta name="viewport" content"width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Contact</title>
+		<link rel="icon" type="image/x-icon" href="../images/schalke.png">
+		<link rel="stylesheet" href="../index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100;1,300;1,700&display=swap">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a class="logo" href="../index.html"><img src="../images/schalke.png" alt="schalke logo"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Players.html">Players</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+		</section>
+		<!-- javascript for toggle menu-->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+		</script>
+	</body>
+</html>
